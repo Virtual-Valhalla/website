@@ -1,6 +1,5 @@
 ---
 layout: default
-title: "Crear un Nuevo Post"
 ---
 
 <h1>Crear un nuevo Post</h1>
