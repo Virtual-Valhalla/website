@@ -44,17 +44,22 @@
 
         {{ content }}
 
-<div class="post-list">
-  {% for post in site.posts %}
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <p>
-      <strong>Author:</strong> {{ post.author }} <br>
-      <strong>Date:</strong> {{ post.date | date: "%B %d, %Y" }}
-    </p>
-    <p>{{ post.excerpt }}</p>
-  {% endfor %}
-</div>
-        
+        <div class="post-list">
+          {% for post in site.posts %}
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p>
+              <strong>Author:</strong> {{ post.author }} <br>
+              <strong>Date:</strong> {{ post.date | date: "%B %d, %Y" }}
+            </p>
+            <p>{{ post.excerpt }}</p>
+          {% endfor %}
+        </div>
+
+        {% if page.url == '/new_post.md' %}
+          <div id="new-post-form">
+            {% include_relative new_post.md %}
+          </div>
+        {% endif %}
       </section>
 
     </div>
