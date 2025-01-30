@@ -1,7 +1,3 @@
----
-layout: default
----
-
 <h1>Crear un nuevo Post</h1>
 <p>Aviso: Por favor, sube las imágenes manualmente al repositorio y proporciona las URLs en los campos correspondientes.</p>
 <form action="/submit-post" method="POST">
