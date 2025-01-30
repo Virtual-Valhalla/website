@@ -1,5 +1,4 @@
 <h1>Crear un nuevo Post</h1>
-<p>Aviso: Por favor, sube las imágenes manualmente al repositorio y proporciona las URLs en los campos correspondientes.</p>
 <form action="/submit-post" method="POST">
     <label for="title">Título:</label><br>
     <input type="text" id="title" name="title" required><br><br>
