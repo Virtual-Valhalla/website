@@ -30,3 +30,12 @@
 
     <button type="submit">Crear Post</button>
 </form>
+
+<script>
+  // Establecer la fecha actual por defecto en el campo de fecha
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const dateInput = document.getElementById('date');
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.value = today;
+  });
+</script>
