@@ -2,6 +2,14 @@
 layout: default
 ---
 
+<div class="post-list">
+  {% for post in site.posts %}
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <p>{{ post.excerpt }}</p>
+  {% endfor %}
+</div>
+
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
