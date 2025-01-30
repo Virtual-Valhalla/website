@@ -1,15 +1,6 @@
 ---
 layout: default
 ---
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear Post</title>
-</head>
-<body>
     <h1>Crear un nuevo Post</h1>
     <form action="/submit-post" method="POST">
         <label for="title">Título:</label><br>
@@ -35,5 +26,3 @@ layout: default
 
         <button type="submit">Crear Post</button>
     </form>
-</body>
-</html>
